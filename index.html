@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover inspiring events, workshops, concerts and meetups with Eventora." />
+  <title>Eventora — Find your next experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Eventora home"><span class="brand-mark">e</span> eventora<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#events">Explore events</a>
+        <a href="#about">Why Eventora</a>
+        <a href="#footer">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">☾</button>
+        <a class="btn btn-small btn-dark" href="#events">Find an event <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> GOOD THINGS HAPPEN WHEN WE GET TOGETHER</div>
+          <h1>Make room for<br><span>something</span> memorable.</h1>
+          <p class="hero-text">Discover experiences that bring people together. From big ideas to unforgettable nights, your next favourite moment starts here.</p>
+          <div class="hero-actions">
+            <a href="#events" class="btn btn-primary">Explore events <span>↗</span></a>
+            <a href="#about" class="text-link">How it works <span>→</span></a>
+          </div>
+          <div class="hero-proof"><div class="avatar-stack"><span>J</span><span>M</span><span>A</span><span>+</span></div><p><strong>2,400+</strong> people found their people</p></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1100&q=85" alt="Crowd enjoying a live event with colourful stage lights">
+            <div class="image-label"><span class="label-icon">✦</span><div><strong>Moments worth sharing</strong><small>Experiences, not just events.</small></div></div>
+          </div>
+          <div class="floating-card"><span class="floating-icon">✳</span><div><strong>Find your next</strong><small>great experience</small></div><span class="floating-arrow">↗</span></div>
+          <div class="hero-sticker">LIVE<br>MORE<span>✳</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 03</span></div>
+    </section>
+
+    <section class="events-section section-pad" id="events">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">THE GOOD STUFF</div><h2>Find your <span>next thing.</span></h2><p class="section-subtitle">A little inspiration for your calendar.</p></div>
+          <a href="#events" class="text-link desktop-link">Discover all events <span>→</span></a>
+        </div>
+        <div class="event-tools">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search events, places, interests..." aria-label="Search events"></label>
+          <div class="filters" id="categoryFilters" aria-label="Filter events by category">
+            <button class="filter-chip active" data-category="All">All events</button>
+            <button class="filter-chip" data-category="Technology">Technology</button>
+            <button class="filter-chip" data-category="Music">Music</button>
+            <button class="filter-chip" data-category="Art & Culture">Art & Culture</button>
+            <button class="filter-chip" data-category="Business">Business</button>
+          </div>
+        </div>
+        <div class="featured-row"><span class="featured-dot"></span> CURATED FOR YOU <span class="featured-line"></span><span class="muted-small" id="resultCount">6 experiences</span></div>
+        <div class="event-grid" id="eventGrid" aria-live="polite"></div>
+        <div class="empty-state hidden" id="emptyState"><div>✦</div><h3>No events found</h3><p>Try a different search or category.</p><button class="btn btn-dark" id="clearFilters">Clear filters</button></div>
+      </div>
+    </section>
+
+    <section class="about-section section-pad" id="about">
+      <div class="container about-grid">
+        <div class="about-visual"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85" alt="Friends gathering at a beautifully arranged event"><div class="about-note"><span>✳</span><strong>Show up.<br>Feel inspired.</strong></div></div>
+        <div class="about-copy"><div class="eyebrow">MORE THAN A TICKET</div><h2>Good plans.<br><span>Great stories.</span></h2><p>We make it easy to find events that match your curiosity. Explore something new, meet people who get you, and make memories that last longer than the event itself.</p>
+          <div class="feature-list"><div><span class="feature-icon">⌕</span><div><strong>Discover with ease</strong><small>Find events that match your interests.</small></div></div><div><span class="feature-icon">♡</span><div><strong>Experiences that matter</strong><small>From learning something new to dancing all night.</small></div></div><div><span class="feature-icon">✓</span><div><strong>Simple registration</strong><small>Save your spot in just a few clicks.</small></div></div></div>
+          <a href="#events" class="btn btn-primary">Find your experience <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section"><div class="container cta-inner"><div><div class="eyebrow">YOUR CALENDAR CALLED</div><h2>Make your next<br>day <span>count.</span></h2></div><a href="#events" class="btn btn-light">Browse upcoming events <span>↗</span></a><div class="cta-spark">✳</div></div></section>
+  </main>
+
+  <footer id="footer"><div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">e</span> eventora<span class="brand-dot">.</span></a><p>Bring your curiosity. We'll bring the events.</p><span>© <span id="year"></span> Eventora. Made for moments.</span></div></footer>
+
+  <div class="modal-backdrop hidden" id="eventModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card event-modal-card"><button class="modal-close" data-close aria-label="Close details">×</button><img id="modalImage" class="modal-image" src="" alt=""><div class="modal-content"><span class="category-tag" id="modalCategory"></span><h2 id="modalTitle"></h2><div class="modal-meta" id="modalMeta"></div><p id="modalDescription"></p><div class="modal-bottom"><div><small>ENTRY</small><strong id="modalPrice"></strong></div><button class="btn btn-primary" id="modalRegister">Register now <span>↗</span></button></div></div></div>
+  </div>
+
+  <div class="modal-backdrop hidden" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+    <div class="modal-card form-card"><button class="modal-close" data-close aria-label="Close registration">×</button><div class="form-kicker">SAVE YOUR SPOT</div><h2 id="registerTitle">You're one step<br>from <span>being there.</span></h2><p class="form-intro">Fill in your details to register for your event.</p>
+      <form id="registrationForm" novalidate>
+        <label>Full name<input type="text" id="fullName" placeholder="e.g. Alex Morgan" autocomplete="name" required><small class="error" id="nameError"></small></label>
+        <label>Email address<input type="email" id="email" placeholder="you@example.com" autocomplete="email" required><small class="error" id="emailError"></small></label>
+        <label>Phone number<input type="tel" id="phone" placeholder="10-digit mobile number" autocomplete="tel" required><small class="error" id="phoneError"></small></label>
+        <label>Selected event<select id="selectedEvent" required><option value="">Choose an event</option></select><small class="error" id="eventError"></small></label>
+        <button type="submit" class="btn btn-primary submit-btn">Complete registration <span>↗</span></button>
+        <p class="privacy-note">Your details stay in this demo's local storage.</p>
+      </form>
+      <div class="success-state hidden" id="successState"><div class="success-check">✓</div><h3>You're on the list!</h3><p id="successMessage">Your registration has been saved.</p><button class="btn btn-dark" id="doneBtn">Done</button></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
